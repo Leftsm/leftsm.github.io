@@ -1,0 +1,25 @@
+title:         "Tetsu's Blog"
+baseurl:       ""
+description:   ""
+author:        "Shoto"
+permalink:     "entry/:title"
+
+blog_links:
+  stories:     "/"
+  about:       "/about"
+
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+
+paginate:      "1"
+paginate_path: "page/:num"
+
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: archives
+  permalinks:
+    category: /category/:name/
+    tag: /tag/:name/

@@ -1,0 +1,142 @@
+@import "syntax.scss";
+@import url("https://rsms.me/inter/inter.css");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
+body {
+    background: #F1F2F6;
+    color: #373638;
+    font: 400 1em/1.5 Inter, sans-serif;
+    margin: 0;   
+    padding: 20px 0;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+blockquote {
+    border-left: 2px solid #608CBA;
+    font-style: italic;
+    margin: 1.5em 2em;
+    padding-left: 1em;
+}
+
+caption, h1, h2, h3, h4, h5, h6, th, .blog-menu {
+    font-family: Quicksand;
+}
+
+.hr {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 25"><polyline fill="none" stroke="hsl(211 39% 55%)" stroke-width="1" points="75,6.2 62.5,18.8 50,6.2 37.5,18.8 25,6.2 12.5,18.8 0,6.2 -12.5,18.8 -25,6.2"/></svg>');
+    height: 1em;
+    max-width: 7.5em;
+    margin: 3em auto 1em;
+}
+
+code, pre, tt {
+    font-family: Consolas;
+    overflow-x: auto;
+}
+
+pre {
+    background: #F9F9F9;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: .2em .7em;
+}
+
+.blog-menu, .container {
+    margin: 0 auto;
+    width: 800px;
+} 
+
+.blog-menu {
+    font-family: Quicksand;
+    padding: 50px 200px;
+
+    ul li {
+        display: inline;
+    }
+
+    li + li::before {
+        color: #E3E4E8;
+        content: " ​ ​ | ​ ";
+    }
+
+    a {
+        color: #C3C4C6;
+    }
+}
+
+.container {
+    background: #FFF;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(230, 230, 230, 0.5);
+    padding: 75px 150px;
+}
+
+.article-list {
+    list-style: none;
+
+    h1 {
+        a:link {
+            color: #373638;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #608CBA;
+            text-decoration: none;
+        }
+    }
+}
+
+.article-content {
+    a {
+        color: #608CBA;
+    }
+
+    .emoji {
+        height: 1em;
+        width: 1em;
+        margin: 0 .05em 0 .1em;
+        vertical-align: -0.1em;
+    }
+}
+
+.misc-info {
+    padding-top: 30px;
+
+    table {
+        table-layout: fixed;
+
+        th, td {
+            padding: 0 10px;
+            width: 25%;
+        }
+
+        th {
+            color: #ADB4CB;
+            font-family: Quicksand;
+            text-align: left;
+        }
+
+        td {
+            vertical-align: 0%;
+        }
+    }
+}
+
+.pagination {
+    padding-top: 30px;
+    text-align: center;
+
+    a, a:hover {
+        color: #608CBA;
+        text-decoration: none;
+    }
+}
