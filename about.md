@@ -3,5 +3,4 @@ layout:    "page"
 permalink: "/about"
 ---
 
-<h1>About Tetsu</h1>
-
+<b>This page is currently under construction, please bear with us.</b>
