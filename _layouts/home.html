@@ -7,23 +7,23 @@ layout: default
     {{ content }}
 
     <ul class="article-list">
-        {% for post in paginator.posts %}
-            <li>
-                <header class="article-header">
-                    <h1 class="article-title">
-                        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-                    </h1>
+    {% for post in paginator.posts %}
+    <li>
+        <header class="article-header">
+            <h1 class="article-title">
+                <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            </h1>
 
-                    <div class="article-content">
-                        {{ post.content }}
-                    </div>
+            <div class="article-content">
+                {{ post.content }}
+            </div>
 
-                    {% if forloop.last == false %}
-                        <div class="hr">&nbsp;</div>
-                    {% endif %}
-                </header>
-            </li>
-        {% endfor %}
+            {% if forloop.last == false %}
+                <div class="hr">&nbsp;</div>
+            {% endif %}
+        </header>
+    </li>
+    {% endfor %}
     </ul>
 
     {% include pagination.html %}

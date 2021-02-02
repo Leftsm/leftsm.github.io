@@ -14,12 +14,3 @@ plugins:
 
 paginate:      "5"
 paginate_path: "page/:num"
-
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layout: archives
-  permalinks:
-    category: /category/:name/
-    tag: /tag/:name/
