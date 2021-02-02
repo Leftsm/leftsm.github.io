@@ -5,7 +5,7 @@
 body {
     background: #F1F2F6;
     color: #373638;
-    font: 400 1em/1.5 Inter, sans-serif;
+    font: 400 1em/1.7 Inter, sans-serif;
     margin: 0;   
     padding: 20px 0;
 }
@@ -16,6 +16,10 @@ a:link, a:visited, a:active {
 
 a:hover {
     text-decoration: underline;
+}
+
+.article-date, figcaption {
+    color: #AAA;
 }
 
 blockquote {
@@ -55,7 +59,6 @@ pre {
 } 
 
 .blog-menu {
-    font-family: Quicksand;
     padding: 50px 200px;
 
     ul li {
@@ -79,6 +82,55 @@ pre {
     padding: 75px 150px;
 }
 
+.article-content {
+    a {
+        color: #608CBA;
+    }
+
+    a img {
+        padding: 3px;
+    }
+
+    a img:hover {
+        border: 1px solid #608CBA;
+        padding: 2px;
+    }
+
+    img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    p {
+        margin: 1.4em 0;
+    }
+
+    .emoji {
+        height: 1em;
+        width: 1em;
+        margin: 0 .05em 0 .1em;
+        vertical-align: -0.1em;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .left {
+        text-align: left;
+    }
+
+    .right {
+        text-align: right;
+    }
+}
+
+.article-date {
+    font-family: Inter;
+    margin-top: -1.3em;
+    padding-bottom: 1em;
+}
+
 .article-list {
     list-style: none;
 
@@ -92,19 +144,6 @@ pre {
             color: #608CBA;
             text-decoration: none;
         }
-    }
-}
-
-.article-content {
-    a {
-        color: #608CBA;
-    }
-
-    .emoji {
-        height: 1em;
-        width: 1em;
-        margin: 0 .05em 0 .1em;
-        vertical-align: -0.1em;
     }
 }
 

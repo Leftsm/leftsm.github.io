@@ -4,6 +4,7 @@ layout: default
 
 <div class="article-content">
     <h1>{{ page.title }}</h1>
+    <h4 class="article-date">{{ page.date | date: "%x %R" }}</h4>
     {{ content }}
 
     <div class="hr">&nbsp;</div>
