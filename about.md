@@ -18,6 +18,8 @@ permalink: "/about"
 </ul>
 
 <blockquote>
+    <strong>Note:</strong>
+
     <p style="margin: 0;">I never really liked introducing myself, since I prefer keeping secrets from everyone (including my relatives), so my introduction may be incomplete.</p>
 
     <sub>*I never really leak my real name in the internet frequently, unless I trust that person.</sub>
