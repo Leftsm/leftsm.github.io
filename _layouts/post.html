@@ -3,9 +3,10 @@ layout: default
 ---
 
 <div class="article-content">
-    <h1>{{ page.title }}</h1>
-    <h4 class="article-date">{{ page.date | date: "%x %R" }}</h4>
+    <h1 class="article-title">{{ page.title }}</h1>
+    <h4 class="article-meta">{{ page.date | date: "%F %R" | replace: "-", "/" }}, in {{ page.category }}</h4>
+    
     {{ content }}
 
-    <hr>
+    <hr class="zigzag-rule">
 </div>

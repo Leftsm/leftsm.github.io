@@ -3,11 +3,11 @@ layout: default
 ---
 
 <div class="home">
-
-    {{ content }}
+    <h1 class="article-title"><span class="color-pink">Search</span> Results</h1>
+    <h4 class="article-meta" style="font-family: Quicksand;">Found {{ site.posts | size }} stories</h4>
 
     <ul class="article-list">
-        {% for post in paginator.posts %}
+        {% for post in site.posts %}
         <li>
             <header class="article-header">
                 <h1 class="article-title">
@@ -26,6 +26,4 @@ layout: default
         </li>
         {% endfor %}
     </ul>
-
-    {% include pagination.html %}
 </div>

@@ -7,6 +7,7 @@ permalink:     "/entry/:title"
 blog_links:
   stories:     "/"
   about:       "/about"
+  archives:    "/archives"
 
 plugins:
   - jekyll-feed

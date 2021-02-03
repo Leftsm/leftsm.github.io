@@ -1,11 +1,10 @@
-@import "syntax.scss";
-@import url("https://rsms.me/inter/inter.css");
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@import "syntax";
+@import "variables";
 
 body {
     background: #F1F2F6;
-    color: #373638;
-    font: 400 1em/1.7 Inter, sans-serif;
+    color: $base-font-color;
+    font: 400 1em/1.7 $base-font-family;
     margin: 0;   
     padding: 20px 0;
 }
@@ -18,27 +17,30 @@ a:hover {
     text-decoration: underline;
 }
 
-.article-date, figcaption {
+.article-meta, figcaption {
     color: #AAA;
 }
 
 blockquote {
-    border-left: 2px solid #608CBA;
+    border-left: 2px solid $base-theme-color;
     font-style: italic;
     margin: 1.5em 2em;
     padding-left: 1em;
 }
 
 caption, h1, h2, h3, h4, h5, h6, th, .blog-menu {
-    font-family: Quicksand;
+    font-family: $base-heading-family;
 }
 
 hr {
+    margin: 3em auto 1em;
+}
+
+.zigzag-rule {
     background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 25"><polyline fill="none" stroke="hsl(211 39% 55%)" stroke-width="1" points="75,6.2 62.5,18.8 50,6.2 37.5,18.8 25,6.2 12.5,18.8 0,6.2 -12.5,18.8 -25,6.2"/></svg>');
     border: 0;
     height: 1em;
     max-width: 7.5em;
-    margin: 3em auto 1em;
 }
 
 code, pre, tt {
@@ -85,7 +87,7 @@ pre {
 
 .article-content {
     a {
-        color: #608CBA;
+        color: $base-theme-color;
     }
 
     a img {
@@ -93,7 +95,7 @@ pre {
     }
 
     a img:hover {
-        border: 1px solid #608CBA;
+        border: 1px solid $base-theme-color;
         padding: 2px;
     }
 
@@ -103,7 +105,7 @@ pre {
     }
 
     p {
-        margin: 1.4em 0;
+        margin-top: 1.4em;
     }
 
     .emoji {
@@ -112,39 +114,31 @@ pre {
         margin: 0 .05em 0 .1em;
         vertical-align: -0.1em;
     }
-
-    .center {
-        text-align: center;
-    }
-
-    .left {
-        text-align: left;
-    }
-
-    .right {
-        text-align: right;
-    }
-}
-
-.article-date {
-    font-family: Inter;
-    margin-top: -1.3em;
-    padding-bottom: 1em;
 }
 
 .article-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
-    h1 {
-        a:link {
-            color: #373638;
-            text-decoration: none;
-        }
+.article-meta {
+    font-family: $base-font-family;
+    margin-top: -1em;
+    padding-bottom: .7em;
+}
 
-        a:hover {
-            color: #608CBA;
-            text-decoration: none;
-        }
+.article-title {
+    font-size: 1.7em;
+
+    a:link {
+        color: $base-font-color;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $base-theme-color;
+        text-decoration: none;
     }
 }
 
@@ -161,7 +155,7 @@ pre {
 
         th {
             color: #ADB4CB;
-            font-family: Quicksand;
+            font-family: $base-heading-family;
             text-align: left;
         }
 
@@ -176,7 +170,33 @@ pre {
     text-align: center;
 
     a, a:hover {
-        color: #608CBA;
+        color: $base-theme-color;
         text-decoration: none;
     }
+}
+
+/*
+=============================
+         Text Styling
+=============================
+*/
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.color-pink {
+    color: $base-pink-color;
+}
+
+.color-turquoise {
+    color: $base-theme-color;
 }
