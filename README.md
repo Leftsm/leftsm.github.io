@@ -1,1 +1,1 @@
-# Diary
+> This is the source code for my Jekyll blog hosted in GitHub pages. You are free to use the theme for your blog by simply forking the repository and editing the credentials according to your needs.
