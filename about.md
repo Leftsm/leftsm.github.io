@@ -7,6 +7,8 @@ permalink: "/about"
 
 <p>&#8216;Tetsu's Diary&#8217; is my personal blog that originally started in December 2020, in order to remove my boredom amidst the COVID-19 pandemic. It was originally hosted in 2 popular blogging platforms, which is <a href="https://blogger.com">Blogger</a>, <a href="https://blog.fc2.com">Blog FC2</a>. However, due to their limitations, I switched to GitHub Pages as the place to manage my blog.</p>
 
+<p>I mostly post random stuff, since this is a personal blog after all.</p>
+
 <hr class="zigzag-rule">
 
 <h1>About Me</h1>
