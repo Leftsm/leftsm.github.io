@@ -14,17 +14,16 @@ permalink: "/about"
 <h1>About Me</h1>
 
 <ul>
-    <li><strong>Name:</strong> &#8220;Tetsu&#8221; (Real Name: <i>Classified</i>*)</li>
+    <li><strong>Name:</strong> &#8220;Tetsu&#8221; (Real Name: <i>Classified</i>)</li>
     <li><strong>Languages:</strong> English, Filipino</li>
     <li><strong>Hobbies / Interests:</strong> Rhythm Games, Surfing the web, Listening to music.</li>
 </ul>
 
 <blockquote>
-    <strong>Note:</strong>
-
-    <p style="margin: 0;">I never really liked introducing myself, since I prefer keeping secrets from everyone (including my relatives), so my introduction may be incomplete.</p>
-
-    <sub>*I never really leak my real name in the internet frequently, unless I trust that person.</sub>
+    <p>
+        <strong>Note:</strong><br>
+        I never really liked introducing myself, since I prefer keeping secrets from everyone (including my relatives), so my introduction may be incomplete.
+    </p>
 </blockquote>
 
 <style>

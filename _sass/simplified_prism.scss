@@ -5,7 +5,7 @@ body {
     background: #F1F2F6;
     color: $base-font-color;
     font: 400 1em/1.7 $base-font-family;
-    margin: 0;   
+    margin: 0;
     padding: 20px 0;
 }
 
@@ -22,13 +22,17 @@ a:hover {
 }
 
 blockquote {
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="3" height="3"><path fill="hsl(0 0% 95.2%)" d="M0 1.8V0h1.8M1.8 3L3 1.8V0L0 3"/></svg>');
+    background: $svg-stripe-pattern;
     border-left: 4px solid $base-theme-color;
     margin: 3em 0;
-    padding: 1.3em 1.8em;
+    padding: 1.5em;
+
+    p { 
+        margin: 0 8px;
+    }
 }
 
-caption, h1, h2, h3, h4, h5, h6, th, .blog-menu {
+caption, h1, h2, h3, h4, h5, h6, th, .site-menu {
     font-family: $base-heading-family;
 }
 
@@ -41,10 +45,10 @@ hr {
 }
 
 .zigzag-rule {
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 25"><polyline fill="none" stroke="hsl(211 39% 55%)" stroke-width="1" points="75,6.2 62.5,18.8 50,6.2 37.5,18.8 25,6.2 12.5,18.8 0,6.2 -12.5,18.8 -25,6.2"/></svg>');
+    background: $zigzag-line-hr;
     border: 0;
     height: 1em;
-    max-width: 7.5em;
+    width: 7.5em;
 }
 
 code, pre, tt {
@@ -60,12 +64,12 @@ pre {
     padding: .2em .7em;
 }
 
-.blog-menu, .container {
+.site-menu, .container {
     margin: 0 auto;
-    max-width: 800px;
+    width: 800px;
 } 
 
-.blog-menu {
+.site-menu {
     padding: 50px 200px;
 
     ul li {
@@ -89,13 +93,9 @@ pre {
     padding: 75px 150px;
 }
 
-.article-content {
+.article, .article-content {
     a {
         color: $base-theme-color;
-    }
-
-    a img {
-        padding: 3px;
     }
 
     a img:hover {
@@ -104,12 +104,13 @@ pre {
     }
 
     img {
-        max-width: 700px;
+        width: 700px;
         height: auto;
+        padding: 3px;
     }
 
     p {
-        margin-top: 1.4em;
+        line-height: 1.85;
     }
 
     ul {
@@ -130,11 +131,16 @@ pre {
         }
     }
 
-    .emoji {
+    img.emoji {
+        display: inline;
+        border: none;
+        box-shadow: none;
         height: 1em;
         width: 1em;
-        margin: 0 .05em 0 .1em;
+        margin: 0 .07em;
         vertical-align: -0.1em;
+        background: none;
+        padding: 0;
     }
 }
 
@@ -161,29 +167,6 @@ pre {
     a:hover {
         color: $base-theme-color;
         text-decoration: none;
-    }
-}
-
-.misc-info {
-    padding-top: 30px;
-
-    table {
-        table-layout: fixed;
-
-        th, td {
-            padding: 0 10px;
-            width: 25%;
-        }
-
-        th {
-            color: #ADB4CB;
-            font-family: $base-heading-family;
-            text-align: left;
-        }
-
-        td {
-            vertical-align: 0%;
-        }
     }
 }
 
