@@ -10,7 +10,8 @@
     <div id="blog-categories">
         <h4 class="heading">categories</h4>
         <ul>
-            {% for category in site.categories | sort: "name" %}
+            {% assign site_categories = site.categories | sort %}
+            {% for category in site_categories %}
             <li><a href="/category/{{ category | first }}">{{ category | first | downcase }}</a></li>
             {% endfor %}
         </ul>
