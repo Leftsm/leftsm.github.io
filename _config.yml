@@ -1,16 +1,35 @@
-title:         "Tetsu's Blog"
-baseurl:       ""
-description:   ""
-author:        "Shoto"
-permalink:     "/entry/:title"
+# Basic site configuration
+title:          "Tetsu's Blog"
+baseurl:        ""
+description:    ""
+author:         "Shoto"
+permalink:      "/entry/:title"
 
-blog_links:
-  stories:     "/"
-  about:       "/about"
+# The links to display in the TopNav menu.
+nav-links:
+  about:        "/about"
 
+# Plugin list
 plugins:
   - jekyll-feed
-  - jekyll-paginate
+  - jekyll-paginate-v2
+  - jekyll-tidy
 
-paginate:      "5"
-paginate_path: "/page/:num"
+# Main pagination configuration for jekyll-paginate-v2
+pagination:
+  enabled:      "true"
+  per_page:     "3"
+  permalink:    "/page/:num/"
+  sort_reverse: "true"
+
+# Autopage configuration for jekyll-paginate-v2
+autopages:
+  enabled:      "true"
+  categories:
+    layouts:
+      - "home.html"
+    permalink:  "/category/:cat"
+  tags:
+    layouts:
+      - "home.html"
+    permalink:  "/tag/:cat"

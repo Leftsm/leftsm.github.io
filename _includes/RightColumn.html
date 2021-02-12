@@ -1,0 +1,26 @@
+<div class="column" id="column-right">
+    <div id="blog-profile">
+        <img src="{{ "/assets/img/reaction.png" | relative_url }}">
+        <p>
+            <strong>Tetsu</strong><br>
+            Welcome to my blog.
+        </p>
+    </div>
+
+    <div id="blog-categories">
+        <h4 class="heading">categories</h4>
+        <ul>
+            {% for category in site.categories | sort: "name" %}
+            <li><a href="/category/{{ category | first }}">{{ category | first | downcase }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div id="social-links">
+        <h4 class="heading">social links</h4>
+        <ul>
+            <li><a href="https://github.com/tetsusg">GitHub</a></li>
+            <li><a href="https://kitsu.io/users/Shoto">Kitsu</a></li>
+        </ul>
+    </div>
+</div>

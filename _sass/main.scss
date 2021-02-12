@@ -1,0 +1,262 @@
+@import "variables";
+@import "syntax";
+@import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    background: black;
+    color: $base-font-color;
+    font: 400 10.5pt/1.83 Nunito, sans-serif;
+    margin: 0;
+    padding: 50px;
+}
+
+a {
+    color: $base-font-color;
+    text-decoration: none;
+
+    &:hover {
+        color: #717171;
+    }
+}
+
+b, em, h1, h2, h3, h4, h5, h6, strong, th, #blog-menu, .entry-meta {
+    font-family: Rubik;
+}
+
+h1, h2 {
+    border-bottom: 1px dashed #3D3D3D;
+    color: #BFB599;
+}
+
+hr {
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 25'><polyline fill='none' stroke='hsl(19, 11%, 59%)' stroke-width='1' points='75,6.2 62.5,18.8 50,6.2 37.5,18.8 25,6.2 12.5,18.8 0,6.2 -12.5,18.8 -25,6.2'/></svg>");
+    border: 0;
+    height: 1em;
+    margin: 2em auto;
+    width: 7.5em;
+}
+
+blockquote {
+    background: $svg-stripe-bg;
+    border-left: 3px solid #3D3D3D;
+    filter: invert(0%) sepia(1%) saturate(3248%) hue-rotate(152deg) brightness(109%) contrast(90%);
+    margin: 3em 0;
+    padding: 1pt 15pt;
+}
+
+pre, code, var, tt {
+    font-family: "Ubuntu Mono", Consolas, monospace;
+    font-size: 10pt;
+    overflow-x: auto;
+}
+
+code.inline {
+    background: $svg-stripe-bg;
+    color: #717171;
+    filter: invert(0%) sepia(1%) saturate(3248%) hue-rotate(152deg) brightness(109%) contrast(90%);
+    padding: 3px;
+}
+
+pre {
+    background: #141414;
+    border-radius: 4px;
+    line-height: 1.7;
+    padding: 5px;
+}
+
+table {
+    table-layout: fixed;
+
+    th, td {
+        border-bottom: 1px solid #3D3D3D;
+        padding: 3px;
+    }
+
+    td {
+        width: 25%;
+    }
+}
+
+.accent-color {
+    color: $accent-color;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+#container {
+    background: #191919;
+    margin: auto;
+    overflow: hidden;
+    padding: 8px;
+    position: relative;
+    width: 980px;
+}
+
+#blog-menu {
+    border-bottom: 2px solid black;
+    font-size: 10.3pt;
+    height: 36px;
+    margin: 0 0 0 193px;
+    padding: 0 10px;
+    position: absolute;
+    width: 765px;
+
+    /* Overrides default link styles */
+    #home-link {
+        color: $accent-color;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .other-links {
+        color: white;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    ul {
+        list-style: none;
+        margin: 5px 0;
+        padding: 0;
+        padding-top: 3px;
+
+        li {
+            display: inline;
+            margin-left: 10px;
+        }
+    }
+}
+
+#column-left, #column-right {
+    width: 185px;
+}
+
+#column-left {
+    background: $svg-stripe-bg;
+    background-size: 6pt;
+    filter: invert(0%) sepia(1%) saturate(3248%) hue-rotate(152deg) brightness(109%) contrast(90%);
+    height: calc(100% - 16px);
+    position: absolute;
+
+    header {
+        color: white;
+        font-size: 11pt;
+        margin: 22px;
+    }
+}
+
+#column-right {
+    border: 2px solid #313131;
+    border-radius: 8px;
+    color: #ACACAC;
+    float: right;
+    margin-top: 44px;
+
+    div {
+        margin-bottom: 2em;
+    }
+
+    .heading, p, ul {
+        margin: 8px 20px;
+    }
+
+    .heading {
+        border-bottom: 2px solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(to left, rgba(0, 0, 0, 0), #3D3D3D);
+        color: $accent-color;
+    }
+
+    p {
+        font-size: 10pt;
+        line-height: 1.7;
+    }
+
+    #blog-profile {
+        img {
+            margin: 12px 12px 0;
+            width: 161px;
+        }
+    }
+
+    #blog-categories, #social-links {
+        ul {
+            list-style: none;
+            padding-left: .3em;
+            margin-top: .5em;
+        }
+
+        ul li {
+            font-size: 10pt;
+
+            &::before {
+                color: black;
+                content: "▪";
+                display: inline-block;
+                margin: .1em 0;
+                margin-right: .5em;
+            }
+        }
+    }
+}
+
+#blog-content {
+    margin: 64px auto;
+    position: relative;
+    width: 556px;
+
+    a img:hover {
+        border: 1px dashed #717171;
+    }
+
+    img {
+        border: 1px dashed #3D3D3D;
+        padding: 2px;
+        width: 500px;
+    }
+}
+
+#entry-list {
+    list-style: none;
+    padding: 0;
+
+    li {
+        display: inline;
+    }
+}
+
+.entry-header {
+    border-bottom: 1px dashed #3D3D3D;
+
+    .entry-title, .entry-meta {
+        display: inline;
+    }
+
+    .entry-title, .entry-title a {
+        color: #BFB599;
+    }
+
+    .entry-meta {
+        color: #5E5653;
+        font-size: 8.5pt;
+        position: absolute;
+        right: 0;
+    }
+}

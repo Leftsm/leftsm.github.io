@@ -2,11 +2,14 @@
 layout: default
 ---
 
-<div class="article">
-    <h1 class="article-title">{{ page.title }}</h1>
-    <h4 class="article-meta">{{ page.date | date: "%F %R" | replace: "-", "/" }}, in {{ page.category }}</h4>
-    
+<header class="entry-header">
+    <h3 class="entry-title">
+        {{ page.title | escape }}
+    </h3>
+    <p class="entry-meta">
+        {{ page.date | date: "%F %R" | replace: "-", ". " }}
+    </p>
+</header>
+<div class="entry-content">
     {{ content }}
-
-    <hr class="zigzag-rule">
 </div>

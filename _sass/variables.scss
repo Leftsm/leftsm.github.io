@@ -1,12 +1,4 @@
-@import url("https://rsms.me/inter/inter.css");
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+$svg-stripe-bg: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='3' height='3'><path d='M0 1.8V0h1.8M1.8 3L3 1.8V0L0 3'/></svg>");
 
-$base-heading-family: Quicksand;
-$base-font-family:    Inter, sans-serif;
-$base-font-color:     #373638;
-
-$base-theme-color:    #608CBA;
-$base-pink-color:     #FF135E;
-
-$svg-stripe-pattern:  url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='3' height='3'><path fill='hsl(0 0% 95.2%)' d='M0 1.8V0h1.8M1.8 3L3 1.8V0L0 3'/></svg>");
-$zigzag-line-hr:      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 25'><polyline fill='none' stroke='hsl(211 39% 55%)' stroke-width='1' points='75,6.2 62.5,18.8 50,6.2 37.5,18.8 25,6.2 12.5,18.8 0,6.2 -12.5,18.8 -25,6.2'/></svg>");
+$accent-color: #F16C00;
+$base-font-color: #A2938C;

@@ -1,33 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <title>{{ site.title }}</title>
-
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-
-    <link rel="shortcut icon" type="image/x-icon" href="{{ "/assets/img/favicon.ico" | relative_url }}">
-    <link rel="stylesheet" type="text/css" href="{{ "/assets/css/style.css" | relative_url }}">
-
-    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+    <link rel="shortcut icon" href="{{ "/assets/img/favicon.ico" | relative_url }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
-    <div class="site-menu">
-        <ul>
-            {% for link in site.blog_links %}
-            <li><a href="{{ link[1] }}">{{ link[0] }}</a></li>
-            {% endfor %}
-        </ul>
-    </div>
-    <div class="container">
-        {{ content }}
+    <div id="container">
+        {% include LeftColumn.html %}
+
+        {% include TopNav.html %}
+
+        {% include RightColumn.html %}
+
+        <div id="blog-content">
+            {{ content }}
+        </div>
     </div>
 </body>
-<script type="text/javascript">
-    twemoji.parse(document.body, {
-        ext:    ".svg",
-        folder: "svg"
-    })
-</script>
 </html>

@@ -1,0 +1,8 @@
+<div id="blog-menu">
+    <ul>
+        <li><a id="home-link" href="/">blog</a></li>
+        {% for link in site.nav-links %}
+        <li><a class="other-links" href="{{ link[1] }}">{{ link[0] }}</a></li>
+        {% endfor %}
+    </ul>
+</div>

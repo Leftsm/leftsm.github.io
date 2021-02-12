@@ -2,30 +2,28 @@
 layout: default
 ---
 
-<div class="home">
+{{ content }}
 
-    {{ content }}
+<ul id="entry-list">
+    {% for post in paginator.posts %}
+    <li>
+        <header class="entry-header">
+            <h3 class="entry-title">
+                <a class="entry-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            </h3>
+            <p class="entry-meta">
+                In {{ post.category }}, {{ post.date | date: "%F %R" | replace: "-", "." }}
+            </p>
+        </header>
+        <div class="entry-content">
+            {{ post.content }}
+        </div>
+    </li>
 
-    <ul class="article-list">
-        {% for post in paginator.posts %}
-        <li>
-            <header class="article-header">
-                <h1 class="article-title">
-                    <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-                </h1>
-                <h4 class="article-meta">{{ post.date | date: "%F %R" | replace: "-", "/" }}, in {{ post.category }}</h4>
+    {% if forloop.last == false %}
+    <br>
+    {% endif %}
+    {% endfor %}
 
-                <div class="article-content">
-                    {{ post.content }}
-                </div>
-
-                {% if forloop.last == false %}
-                    <hr class="zigzag-rule">
-                {% endif %}
-            </header>
-        </li>
-        {% endfor %}
-    </ul>
-
-    {% include pagination.html %}
-</div>
+    {% include Pagination.html %}
+</ul>
