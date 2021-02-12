@@ -3,11 +3,11 @@ layout: default
 ---
 
 <header class="entry-header">
-    <h3 class="entry-title">
+    <h2 class="entry-title">
         {{ page.title | escape }}
-    </h3>
+    </h2>
     <p class="entry-meta">
-        {{ page.date | date: "%F %R" | replace: "-", ". " }}
+        In {{ page.category }}, {{ page.date | date: "%F %R" | replace: "-", "." }}
     </p>
 </header>
 <div class="entry-content">

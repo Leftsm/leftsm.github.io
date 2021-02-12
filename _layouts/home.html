@@ -8,9 +8,9 @@ layout: default
     {% for post in paginator.posts %}
     <li>
         <header class="entry-header">
-            <h3 class="entry-title">
+            <h2 class="entry-title">
                 <a class="entry-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-            </h3>
+            </h2>
             <p class="entry-meta">
                 In {{ post.category }}, {{ post.date | date: "%F %R" | replace: "-", "." }}
             </p>

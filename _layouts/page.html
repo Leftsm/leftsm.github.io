@@ -2,4 +2,11 @@
 layout: default
 ---
 
-{{ content }}
+<header class="entry-header">
+    <h2 class="entry-title">
+        {{ page.title | escape }}
+    </h2>
+</header>
+<div class="entry-content">
+    {{ content }}
+</div>

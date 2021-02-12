@@ -8,7 +8,7 @@
 body {
     background: black;
     color: $base-font-color;
-    font: 400 10.5pt/1.83 Nunito, sans-serif;
+    font: 400 10.7pt/1.8 Nunito, sans-serif;
     margin: 0;
     padding: 50px;
 }
@@ -26,8 +26,7 @@ b, em, h1, h2, h3, h4, h5, h6, strong, th, #blog-menu, .entry-meta {
     font-family: Rubik;
 }
 
-h1, h2 {
-    border-bottom: 1px dashed #3D3D3D;
+h1, h2, h3, h4, h5, h6 {
     color: #BFB599;
 }
 
@@ -185,14 +184,20 @@ table {
     }
 
     p {
-        font-size: 10pt;
+        font-size: 10.5pt;
         line-height: 1.7;
     }
 
     #blog-profile {
-        img {
-            margin: 12px 12px 0;
+        a img {
+            border: 1px dashed #3D3D3D;
+            margin: 9px 9px 0;
+            padding: 2px;
             width: 161px;
+
+            &:hover {
+                border: 1px dashed #313131;
+            }
         }
     }
 
@@ -204,7 +209,7 @@ table {
         }
 
         ul li {
-            font-size: 10pt;
+            font-size: 10.5pt;
 
             &::before {
                 color: black;
@@ -230,6 +235,10 @@ table {
         border: 1px dashed #3D3D3D;
         padding: 2px;
         width: 500px;
+    }
+
+    ul {
+        list-style-type: square;
     }
 
     .emoji {
@@ -262,7 +271,7 @@ table {
 
     .entry-meta {
         color: #5E5653;
-        font-size: 8.5pt;
+        font-size: 9pt;
         position: absolute;
         right: 0;
     }
