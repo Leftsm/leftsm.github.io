@@ -1,3 +1,4 @@
+@import "font-awesome";
 @import "variables";
 @import "syntax";
 @import url('https://rsms.me/inter/inter.css');
@@ -22,7 +23,7 @@ a {
     }
 }
 
-b, em, h1, h2, h3, h4, h5, h6, strong, th, #blog-menu, #column-left, .entry-meta {
+b, em, h1, h2, h3, h4, h5, h6, strong, th, #blog-menu, #column-left, #search-form *, .entry-meta {
     font-family: Rubik;
 }
 
@@ -124,6 +125,8 @@ table {
 
     .other-links {
         color: white;
+        float: right;
+        margin: 0 7px;
 
         &:hover {
             text-decoration: underline;
@@ -177,15 +180,14 @@ table {
     }
 
     .heading {
-        border-bottom: 2px solid;
+        border-bottom: 2px solid #3D3D3D;
         border-image-slice: 1;
-        border-image-source: linear-gradient(to left, rgba(0, 0, 0, 0), #3D3D3D);
         color: $accent-color;
     }
 
     p {
-        font-size: 10.5pt;
-        line-height: 1.7;
+            font-size: 10.5pt;
+            line-height: 1.7;
     }
 
     #blog-profile {
@@ -206,17 +208,17 @@ table {
             list-style: none;
             padding-left: .3em;
             margin-top: .5em;
-        }
 
-        ul li {
-            font-size: 10.5pt;
-
-            &::before {
-                color: black;
-                content: "▪";
-                display: inline-block;
-                margin: .1em 0;
-                margin-right: .5em;
+            li {
+                font-size: 10.5pt;
+    
+                &::before {
+                    color: black;
+                    content: "▪";
+                    display: inline-block;
+                    margin: .1em 0;
+                    margin-right: .5em;
+                }
             }
         }
     }
@@ -226,27 +228,6 @@ table {
     margin: 64px auto;
     position: relative;
     width: 556px;
-
-    a img:hover {
-        border: 1px dashed #717171;
-    }
-
-    img {
-        border: 1px dashed #3D3D3D;
-        padding: 2px;
-        width: 500px;
-    }
-
-    ul {
-        list-style-type: square;
-    }
-
-    .emoji {
-        border: none;
-        margin: 0 .05em 0 .1em;
-        vertical-align: -0.2em;
-        width: 10.5pt;
-    }
 }
 
 #entry-list {
@@ -275,4 +256,46 @@ table {
         position: absolute;
         right: 0;
     }
+}
+
+.entry-content {
+    margin-top: 10px;
+
+    a img:hover {
+        border: 1px dashed #717171;
+    }
+
+    img {
+        border: 1px dashed #3D3D3D;
+        padding: 2px;
+        width: 500px;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: .3em;
+        margin-top: .5em;
+
+        li::before {
+            color: #3D3D3D;
+            content: "▪";
+            display: inline-block;
+            margin: .15em 0;
+            margin-right: .5em;
+        }
+    }
+
+    .emoji {
+        border: none;
+        margin: 0 .05em 0 .1em;
+        vertical-align: -0.2em;
+        width: 10.5pt;
+    }
+}
+
+#search-form input[type=text] {
+    background: #F0F0F0;
+    border: 1px solid #5E5653;
+    padding: 10px;
+    width: 96%;
 }

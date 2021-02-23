@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<header class="entry-header">
+    <h2 class="entry-title">
+        {{ page.title | escape }}
+    </h2>
+</header>
+
+<br>
+
+<form id="search-form">
+    <input type="text" placeholder="type to search" id="search-input">
+</form>
+
+<hr>
+
+<ul id="entry-list"></ul>
+
+
+<script src="{{ '/assets/js/simple-jekyll-search.min.js' | relative_url }}"></script>
+<script type="text/javascript">
+    window.simpleJekyllSearch = new SimpleJekyllSearch({
+        searchInput:          document.getElementById("search-input"),
+        resultsContainer:     document.getElementById("entry-list"),
+        json:                 "{{ 'search.json' | relative_url }}",
+        searchResultTemplate: "<li><header class='entry-header' style='margin-top: 5px;'><h3 class='entry-title'><a class='entry-link' href='{url}'>{title}</a></h3><p class='entry-meta'>In {category}, {date}</p></header></li>",
+        noResultsText:        "There is no content with the keywords you inputted.",
+        limit: 10,
+        fuzzy: false
+    })
+</script>
