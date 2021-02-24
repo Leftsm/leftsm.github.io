@@ -15,11 +15,11 @@ body {
 }
 
 a {
-    color: $base-font-color;
+    color: #717171;
     text-decoration: none;
 
     &:hover {
-        color: #717171;
+        color: #3D3D3D;
     }
 }
 
@@ -255,6 +255,10 @@ table {
         font-size: 9pt;
         position: absolute;
         right: 0;
+
+        a {
+            color: inherit;
+        }
     }
 }
 

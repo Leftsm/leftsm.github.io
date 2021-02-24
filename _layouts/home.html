@@ -12,7 +12,7 @@ layout: default
                 <a class="entry-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
             </h2>
             <p class="entry-meta">
-                In {{ post.category }}, {{ post.date | date: "%F %R" | replace: "-", "." }}
+                In <a href="/category/{{ post.category }}">{{ post.category }}</a>, {{ post.date | date: "%F %R" | replace: "-", "." }}
             </p>
         </header>
         <div class="entry-content">
