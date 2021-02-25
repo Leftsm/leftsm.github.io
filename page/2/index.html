@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tetsu's Blog</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <a href="/">
+        <div class="column" id="column-left">
+          <header>Tetsu's Blog</header>
+        </div>
+      </a>
+      <div id="blog-menu">
+        <ul>
+          <li><a id="home-link" href="/">blog</a></li>
+          <li><a class="other-links" href="/about">about</a></li>
+          <li><a class="other-links" href="/search">search</a></li>
+        </ul>
+      </div>
+      <div class="column" id="column-right">
+        <div id="blog-profile">
+          <a href="/about"><img src="/assets/img/reaction.png"></a>
+          <p>
+            <strong>Tetsu</strong><br>
+            Welcome to my blog.
+          </p>
+        </div>
+        <div id="blog-categories">
+          <h4 class="heading">categories</h4>
+          <ul>
+            <li><a href="/category/Diary">diary</a></li>
+            <li><a href="/category/Gaming">gaming</a></li>
+            <li><a href="/category/Life">life</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="blog-content">
+        <ul id="entry-list">
+          <li>
+            <header class="entry-header">
+              <h2 class="entry-title">
+                <a class="entry-link" href="/entry/3">Ranking up!</a>
+              </h2>
+              <p class="entry-meta">
+                In <a href="/category/Gaming">Gaming</a>, 2021.02.04 03:47
+              </p>
+            </header>
+            <div class="entry-content">
+              <figure class="center">
+                <img src="/uploads/2021/02/osu!taiko-profile.png" alt="" />
+                <figcaption>Apologies on where the image's angle is f'ed up ; ;</figcaption>
+              </figure>
+              <p>Since I don't really play Taiko regularly, my rank only increases by hundreds (but atleast I get to be on the top 50 leaderboards on some maps)</p>
+              <p>I'm not really that good at Taiko since I usually keep missing notes on streams (unless there's a pattern), but since I have been <a href="https://taiko.bui.pm">playing on a website</a> for a long time, I may improved my skills a bit, until I finally figured to play Taiko on my old osu! account instead.</p>
+              <p>I'm kinda impressed since I didn't expect to reach 5 digits (because like I said, I'm not really that good at Taiko), so might as well improve and if I can, I would try to reach 4 digits.</p>
+            </div>
+          </li>
+          <br>
+          <li>
+            <header class="entry-header">
+              <h2 class="entry-title">
+                <a class="entry-link" href="/entry/2">2021.02.02</a>
+              </h2>
+              <p class="entry-meta">
+                In <a href="/category/Life">Life</a>, 2021.02.02 02:44
+              </p>
+            </header>
+            <div class="entry-content">
+              <figure class="center">
+                <a href="https://i.gifer.com/9TLY.gif"><img src="https://i.gifer.com/9TLY.gif" alt="" /></a>
+                <figcaption>Doing homework / coding 😶</figcaption>
+              </figure>
+              <p class="center">There is literally nothing to do nowadays other than to watch TV or surf in the internet.</p>
+            </div>
+          </li>
+          <br>
+          <li>
+            <header class="entry-header">
+              <h2 class="entry-title">
+                <a class="entry-link" href="/entry/1">First entry</a>
+              </h2>
+              <p class="entry-meta">
+                In <a href="/category/Diary">Diary</a>, 2021.02.01 10:46
+              </p>
+            </header>
+            <div class="entry-content">
+              <p>Good evening.</p>
+              <p>Due to the creation of my own theme, my old blog will be deprecated, and will be replaced with a new one.</p>
+              <p>The newly recreated skin is based on a <a href="https://factory.blog.naver.com/skin/Detail.nhn?itemSeq=48402985&amp;categoryNo=&amp;tagNo=#cb">specific skin</a> from <a href="https://blog.naver.com">Naver Blog</a>, and since I am having problems registering on it, plus the user base is Korean, I decided to mimic the theme instead. Although it's not a perfect copy (since the skin is still work in progress), it already looks like a decent copy of the skin (atleast for me.)</p>
+              <p>And of course, I modified it to fit my preferences, such as adding Twemoji support on the skin and syntax highlighting to it.</p>
+              <p>I'm kinda surprised that it was seemingly easy to copy, considering that I am a bit of a noob in web design and double checking my code 😅</p>
+              <p>I also based the skin on other websites, such as <a href="https://xenosium.com">Xenosium</a> and <a href="https://osu.ppy.sh">osu! web</a>, so you may find a bit of the elements similar to these websites (such as the font, and UI design).</p>
+              <p>Anyway, I have a lot of things to do right now, so I might as well end this entry.</p>
+            </div>
+          </li>
+          <div class="center" id="blog-pagination">
+            <a href="/">&laquo;</a>
+            <span>2 of 2</span>
+            <span>&raquo;</span>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    twemoji.parse(document.body, {
+        ext:    ".svg",
+        folder: "svg"
+    })
+  </script>
+</html>

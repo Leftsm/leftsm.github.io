@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tetsu's Blog</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <a href="/">
+        <div class="column" id="column-left">
+          <header>Tetsu's Blog</header>
+        </div>
+      </a>
+      <div id="blog-menu">
+        <ul>
+          <li><a id="home-link" href="/">blog</a></li>
+          <li><a class="other-links" href="/about">about</a></li>
+          <li><a class="other-links" href="/search">search</a></li>
+        </ul>
+      </div>
+      <div class="column" id="column-right">
+        <div id="blog-profile">
+          <a href="/about"><img src="/assets/img/reaction.png"></a>
+          <p>
+            <strong>Tetsu</strong><br>
+            Welcome to my blog.
+          </p>
+        </div>
+        <div id="blog-categories">
+          <h4 class="heading">categories</h4>
+          <ul>
+            <li><a href="/category/Diary">diary</a></li>
+            <li><a href="/category/Gaming">gaming</a></li>
+            <li><a href="/category/Life">life</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="blog-content">
+        <header class="entry-header">
+          <h2 class="entry-title">
+            Search Blog
+          </h2>
+        </header>
+        <br>
+        <form id="search-form">
+          <input type="text" placeholder="type to search" id="search-input">
+        </form>
+        <hr>
+        <ul id="entry-list"></ul>
+        <script src="/assets/js/simple-jekyll-search.min.js"></script>
+        <script type="text/javascript">
+          window.simpleJekyllSearch = new SimpleJekyllSearch({
+              searchInput:          document.getElementById("search-input"),
+              resultsContainer:     document.getElementById("entry-list"),
+              json:                 "/search.json",
+              searchResultTemplate: "<li><header class='entry-header' style='margin-top: 5px;'><h3 class='entry-title'><a class='entry-link' href='{url}'>{title}</a></h3><p class='entry-meta'>In {category}, {date}</p></header></li>",
+              noResultsText:        "There is no content with the keywords you inputted.",
+              limit: 10,
+              fuzzy: false
+          })
+        </script>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    twemoji.parse(document.body, {
+        ext:    ".svg",
+        folder: "svg"
+    })
+  </script>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tetsu's Blog</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <a href="/">
+        <div class="column" id="column-left">
+          <header>Tetsu's Blog</header>
+        </div>
+      </a>
+      <div id="blog-menu">
+        <ul>
+          <li><a id="home-link" href="/">blog</a></li>
+          <li><a class="other-links" href="/about">about</a></li>
+          <li><a class="other-links" href="/search">search</a></li>
+        </ul>
+      </div>
+      <div class="column" id="column-right">
+        <div id="blog-profile">
+          <a href="/about"><img src="/assets/img/reaction.png"></a>
+          <p>
+            <strong>Tetsu</strong><br>
+            Welcome to my blog.
+          </p>
+        </div>
+        <div id="blog-categories">
+          <h4 class="heading">categories</h4>
+          <ul>
+            <li><a href="/category/Diary">diary</a></li>
+            <li><a href="/category/Gaming">gaming</a></li>
+            <li><a href="/category/Life">life</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="blog-content">
+        <ul id="entry-list">
+          <li>
+            <header class="entry-header">
+              <h2 class="entry-title">
+                <a class="entry-link" href="/entry/3">Ranking up!</a>
+              </h2>
+              <p class="entry-meta">
+                In <a href="/category/Gaming">Gaming</a>, 2021.02.04 03:47
+              </p>
+            </header>
+            <div class="entry-content">
+              <figure class="center">
+                <img src="/uploads/2021/02/osu!taiko-profile.png" alt="" />
+                <figcaption>Apologies on where the image's angle is f'ed up ; ;</figcaption>
+              </figure>
+              <p>Since I don't really play Taiko regularly, my rank only increases by hundreds (but atleast I get to be on the top 50 leaderboards on some maps)</p>
+              <p>I'm not really that good at Taiko since I usually keep missing notes on streams (unless there's a pattern), but since I have been <a href="https://taiko.bui.pm">playing on a website</a> for a long time, I may improved my skills a bit, until I finally figured to play Taiko on my old osu! account instead.</p>
+              <p>I'm kinda impressed since I didn't expect to reach 5 digits (because like I said, I'm not really that good at Taiko), so might as well improve and if I can, I would try to reach 4 digits.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    twemoji.parse(document.body, {
+        ext:    ".svg",
+        folder: "svg"
+    })
+  </script>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tetsu's Blog</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <a href="/">
+        <div class="column" id="column-left">
+          <header>Tetsu's Blog</header>
+        </div>
+      </a>
+      <div id="blog-menu">
+        <ul>
+          <li><a id="home-link" href="/">blog</a></li>
+          <li><a class="other-links" href="/about">about</a></li>
+          <li><a class="other-links" href="/search">search</a></li>
+        </ul>
+      </div>
+      <div class="column" id="column-right">
+        <div id="blog-profile">
+          <a href="/about"><img src="/assets/img/reaction.png"></a>
+          <p>
+            <strong>Tetsu</strong><br>
+            Welcome to my blog.
+          </p>
+        </div>
+        <div id="blog-categories">
+          <h4 class="heading">categories</h4>
+          <ul>
+            <li><a href="/category/Diary">diary</a></li>
+            <li><a href="/category/Gaming">gaming</a></li>
+            <li><a href="/category/Life">life</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="blog-content">
+        <header class="entry-header">
+          <h2 class="entry-title">
+            About Blog
+          </h2>
+        </header>
+        <div class="entry-content">
+          <p>Tetsu's Blog was originally created in 2020 in an attempt to reduce boredom amidst the COVID-19 pandemic. It was first hosted on <a href="https://blogger.com">Blogger</a>, a blogging platform by Google, then was moved to <a href="https://blog.fc2.com">Blog FC2</a>. However, due to the limitations of these 2 blogging platforms, I decided to use <a href="https://github.com/jekyll/jekyll">Jekyll</a> to manage my blog, and use <a href="https://pages.github.com">GitHub Pages</a> to host it.</p>
+          <hr />
+          <h2 class="heading">About Tetsu</h2>
+          <ul>
+            <li><strong>Name:</strong> “Tetsu” / Real Name: <code class="inline">It's a secret…<a href="#notice1">*</a></code></li>
+            <li><strong>Languages Spoken:</strong> English, Tagalog</li>
+            <li><strong>Hobbies / Interests:</strong> Blogging, surfing the web, Tetris, Rhythm games, BEMANI</li>
+          </ul>
+          <blockquote>
+            <p>
+              <strong>Note:</strong><br />
+              I never really liked introducing since most of the information I share is incomplete, but this might enough for an about page.
+              <br />
+              <sub id="notice1">*Confidential due to privacy issues</sub>
+            </p>
+          </blockquote>
+          <style>
+            .heading {
+                border-bottom: 1px dashed #3D3D3D;
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    twemoji.parse(document.body, {
+        ext:    ".svg",
+        folder: "svg"
+    })
+  </script>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tetsu's Blog</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <a href="/">
+        <div class="column" id="column-left">
+          <header>Tetsu's Blog</header>
+        </div>
+      </a>
+      <div id="blog-menu">
+        <ul>
+          <li><a id="home-link" href="/">blog</a></li>
+          <li><a class="other-links" href="/about">about</a></li>
+          <li><a class="other-links" href="/search">search</a></li>
+        </ul>
+      </div>
+      <div class="column" id="column-right">
+        <div id="blog-profile">
+          <a href="/about"><img src="/assets/img/reaction.png"></a>
+          <p>
+            <strong>Tetsu</strong><br>
+            Welcome to my blog.
+          </p>
+        </div>
+        <div id="blog-categories">
+          <h4 class="heading">categories</h4>
+          <ul>
+            <li><a href="/category/Diary">diary</a></li>
+            <li><a href="/category/Gaming">gaming</a></li>
+            <li><a href="/category/Life">life</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="blog-content">
+        <header class="entry-header">
+          <h2 class="entry-title">
+            Back after a short hiatus
+          </h2>
+          <p class="entry-meta">
+            In Diary, 2021.02.23 06:54
+          </p>
+        </header>
+        <div class="entry-content">
+          <p>Good afternoon.</p>
+          <p>After an unexpected hiatus, I am finally able to write a blog post again. So today I will tell you what happened to me / what I worked on the past week.</p>
+          <hr />
+          <h3>1. Adding a search function on my blog</h3>
+          <p>Even though I am gonna the blog's skin soon, I still took the chance to add a search function to the current blog skin, since I have been wanting to add it for a long time, and people might use the skin for their own blogs.</p>
+          <p>I used <a href="https://github.com/christian-fei/Simple-Jekyll-Search">Simple Jekyll Search</a> in order to implement the search function.</p>
+          <p><br />
+          </p>
+          <h3>2. Hosting my first avatar collab in Discord</h3>
+          <p>One of my goals was to host avatar collabs in Discord, since I wanted to improve my skills on editing images. The main theme of the collab was hololive<a href="#about-hl">*</a> ~ nonstop story. Since I did everything related to image editing on my mobile, there were only 23 slots in the collab. 19 of the slots were filled, which I'm kinda proud of since this is the first collab I have hosted.</p>
+          <p id="about-hl">*Hololive Production is a virtual YouTuber talent agency owned by Japanese company Cover Corp. and formed in December 2019.</p>
+          <figure class="center">
+            <a href="https://i.ppy.sh/9cf8b38d32116d22a739277591ffbb3539dcfcde/68747470733a2f2f692e696d6775722e636f6d2f3345796c4e5a322e6a7067"><img src="https://i.ppy.sh/9cf8b38d32116d22a739277591ffbb3539dcfcde/68747470733a2f2f692e696d6775722e636f6d2f3345796c4e5a322e6a7067" alt="" /></a>
+            <figcaption>The image I used in the collab</figcaption>
+          </figure>
+          <hr />
+          <p>These are all the things that occured last week. For now, I am currently organizing another collab based on Genshin Impact, while I'm also planning to release a new blog skin.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    twemoji.parse(document.body, {
+        ext:    ".svg",
+        folder: "svg"
+    })
+  </script>
+</html>
