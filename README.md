@@ -1,1 +1,1 @@
-This project is now longer maintained.
+This project is no longer maintained.
