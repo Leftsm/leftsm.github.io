@@ -1,1 +1,1 @@
-# Darkcube 1.0.0
+This project is now longer maintained.
